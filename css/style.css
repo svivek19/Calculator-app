@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    outline: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(222, 26%, 31%);
+}
+
+.calculater {
+    background-color: hsl(223, 31%, 20%);
+    padding: 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+}
+
+input {
+    grid-column: span 4;
+    height: 70px;
+    background-color: hsl(223, 31%, 20%);
+    box-shadow: 5px 5px 12px rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    text-align: end;
+    margin: 10px;
+    padding: 10px;
+}
+
+button {
+    height: 40px;
+    width: 60px;
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0 2px 4px #A89E9D;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #3F4551;
+}
+
+button:hover {
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.reset-btn {
+    grid-column: span 2;
+    width: auto;
+    background-color: #647299;
+    color: #fff;
+    box-shadow: 0 3px 3px #444F6F;
+    font-size: 18px;
+}
+
+.reset-btn:hover {
+    background-color: #A2B3E1;
+    transition: 0.3s;
+}
+
+.equal-btn {
+    grid-column: span 2;
+    width: auto;
+    font-size: 20px;
+    background-color: #D13F30;
+    color: #fff;
+    box-shadow: 0 3px 3px #6C2C2C;
+}
+
+.equal-btn:hover {
+    background-color: #F96C5B;
+    transition: 0.3s;
+}
+
+.del-btn {
+    font-size: 18px;
+    background-color: #647299;
+    color: #fff;
+    box-shadow: 0 3px 3px #444F6F;
+}
+
+.del-btn:hover {
+    background-color: #A2B3E1;
+    transition: 0.3s;
+}
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
